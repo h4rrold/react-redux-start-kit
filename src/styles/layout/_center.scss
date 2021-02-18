@@ -1,0 +1,37 @@
+//Style for Centered Layout
+
+.page-view--centered-layout{
+  width: 100%;
+  .main-container{
+    height: calc(100% - #{$centered-header-height});
+    @include space(padding, all, $small);
+    @media screen and (min-width: $small-screen) {
+      @include space(padding, all, $medium);
+    }
+  }
+  header{
+    height: $centered-header-height;
+    background-color: $white;
+    box-shadow: $shadow;
+    text-align: center;
+    img{
+      display: inline-block;
+      height: 100%;
+      max-height: 43px;
+      margin-top: 1.2em;
+    }
+  }
+}
+.page-view--landing-layout{
+  transition: all 0.25s;
+  transition-timing-function: ease;
+  margin-left: auto;
+  &.expanded{
+    /* width: calc(100% - 240px);
+    margin-left: 240px; */
+  }
+  &.locked{
+    width: calc(100% - 240px);
+    margin-left: 240px;
+  }
+}

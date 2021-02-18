@@ -1,0 +1,15 @@
+.page-view--landing-layout{
+  @include space(padding, horizontal, $small );
+  // margin-left: $aside-width;
+  padding-top: 20px;
+
+  @media (min-width: 960px) {
+    padding-top: 0px;
+    @include space(margin, left, $aside-width);
+    width: calc(100% - #{$aside-width});
+
+    &.main{
+      height: calc(100% - 66px);
+    }
+  }
+}

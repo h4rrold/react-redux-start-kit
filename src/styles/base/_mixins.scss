@@ -1,0 +1,39 @@
+@mixin space($type:margin, $direction:all, $amount:$small){
+  @if $type == padding {
+    @if $direction == all{
+      padding: $amount;
+    } @else if $direction == top {
+      padding-top:$amount
+    } @else if $direction == left {
+      padding-left:$amount
+    } @else if $direction == right {
+      padding-right:$amount
+    } @else if $direction == vertical{
+    padding-top: $amount;
+    padding-bottom: $amount;
+  } @else if $direction == horizontal{
+    padding-left: $amount;
+    padding-right: $amount;
+  }@else {
+    padding-bottom:$amount
+  }
+  } @else {
+    @if $direction == all{
+      margin: $amount;
+    } @else if $direction == top {
+      margin-top:$amount
+    } @else if $direction == left {
+      margin-left:$amount
+    } @else if $direction == right {
+      margin-right:$amount
+    } @else if $direction == vertical{
+    margin-top: $amount;
+    margin-bottom: $amount;
+  } @else if $direction == horizontal{
+    margin-left: $amount;
+    margin-right: $amount;
+  }@else {
+    margin-bottom:$amount
+  }
+  }
+}

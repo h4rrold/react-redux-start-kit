@@ -1,0 +1,41 @@
+// === Color
+
+$brand-blue:        #0064FA !default;
+$dark-violet:       #4E5983 !default;
+$light-violet:      #868DAA !default;
+$color-orange:      #FA9600 !default;
+$color-red:         #CE3D38 !default;
+$white:             #fff;
+$black:             #212121;
+$grey-background:   #F2F7FC;
+
+
+// === Font variables
+
+
+// === Typography
+$font-base:         16px;
+
+// === Shadows
+$shadow:           0px 3px 10px rgba(0, 0, 0, 0.05);
+
+// === White Space
+$helper-space: 10px;
+$x-small: 15px;
+$small: 20px;
+$navigation-space: 22px;
+$medium: 40px;
+$large: 60px;
+$x-large: 80px;
+
+// === Elements Height
+$centered-header-height: 50px;
+$horizontal-header-height: 55px;
+$aside-width:            70px;
+$aside-inner-width:      40px;
+
+// == Breakpoints
+
+$small-screen: 576px;
+$medium-screen: 992px;
+$xl-screen: 1400px;
