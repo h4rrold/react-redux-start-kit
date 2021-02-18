@@ -1,0 +1,1 @@
+Ready to use react-redux start-kit.
